@@ -94,30 +94,6 @@ public class PaySdkMgr {
     {
         PaySDKManager.getsInstance().convertVirtualToLocal(var1,var2,var3);
     }
-//    //发起在线支付或者短代支付
-//    public  void startSMSPay(Activity var1, StartPayEntity var2, StartPayCallBack var3)  {
-//
-//        StartPayEntity startPayEntity = new StartPayEntity();
-//        startPayEntity.amount =  var2.amount;
-//        startPayEntity.countryCode = var2.countryCode;
-//        startPayEntity.currency = var2.currency;
-//        startPayEntity.orderNum = var2.orderNum;//order number
-//        startPayEntity.payMode = StartPayEntity.PAY_MODE_SMS;//支付方式
-//
-//        this.startPay(var1,startPayEntity,var3);
-//    }
-//    public  void startONLINEPay(Activity var1, StartPayEntity var2, StartPayCallBack var3)  {
-//
-//        StartPayEntity startPayEntity = new StartPayEntity();
-//        startPayEntity.amount =  var2.amount;
-//        startPayEntity.countryCode = var2.countryCode;
-//        startPayEntity.currency = var2.currency;
-//        startPayEntity.orderNum = var2.orderNum;//order number
-//        startPayEntity.payMode = StartPayEntity.PAY_MODE_ONLINE;//支付方式
-//
-//        this.startPay(var1,startPayEntity,var3);
-//
-//    }
     public  void startPay(Activity var1, StartPayEntity var2, StartPayCallBack var3)  {
 
         StartPayEntity startPayEntity = new StartPayEntity();

@@ -1,38 +1,18 @@
 package com.game.YouleSdk;
 
-import static java.lang.Thread.sleep;
 
 import android.app.Activity;
 import android.content.Context;
-import android.os.Handler;
-import android.os.Looper;
-import android.util.ArrayMap;
 import android.util.Log;
 
-//import com.applovin.mediation.MaxAdFormat;
-//import com.applovin.mediation.ads.MaxAdView;
-//import com.applovin.mediation.ads.MaxInterstitialAd;
-//import com.applovin.mediation.ads.MaxRewardedAd;
-//import com.applovin.mediation.nativeAds.MaxNativeAdLoader;
-//import com.applovin.sdk.AppLovinPrivacySettings;
-//import com.applovin.sdk.AppLovinSdk;
-//import com.applovin.sdk.AppLovinSdkConfiguration;
-//import com.game.AppLovinSdk.AppLovinMgr;
-//import com.game.MobileAdsSDK.MobileAdsMgr;
 import com.game.PaySDKManager.PaySdkMgr;
-import com.transsion.pay.paysdk.manager.PaySDKManager;
-import com.transsion.pay.paysdk.manager.entity.ConvertPriceInfo;
 import com.transsion.pay.paysdk.manager.entity.CountryCurrencyData;
 import com.transsion.pay.paysdk.manager.entity.OrderEntity;
 import com.transsion.pay.paysdk.manager.entity.StartPayEntity;
 import com.transsion.pay.paysdk.manager.entity.SupportPayInfoEntity;
-import com.transsion.pay.paysdk.manager.inter.CurrencyConvertCallBack;
 import com.transsion.pay.paysdk.manager.inter.InitResultCallBack;
 import com.transsion.pay.paysdk.manager.inter.StartPayCallBack;
-import com.transsion.pay.paysdk.manager.testmode.SMSTestUtil;
 
-import java.math.BigDecimal;
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
@@ -239,7 +219,6 @@ public class YouleSdkMgr {
                 YouleSdkMgr.getsInstance().smsPaymentNotify(false);
             }
         });
-//        Log.i(TAG,"PaySdkMgr.startPay.payOrderNum:"+payOrderNum);
     }
 
     public void smsPaymentNotify(boolean  paymentStatus)
